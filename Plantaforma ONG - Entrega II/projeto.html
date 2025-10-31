@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ONG Esperança — Projetos</title>
+  <meta name="description" content="Conheça os projetos da ONG Esperança">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header (mesmo que index) -->
+  <header class="header" role="banner">
+    <div class="inner container">
+      <a href="index.html" class="brand" aria-label="Página inicial ONG Esperança">
+        <img src="assets/IMAGEM/logo.png" alt="ONG Esperança" class="logo">
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-item"><a href="index.html">Início</a></div>
+        <div class="nav-item">
+          <a href="projeto.html" aria-haspopup="true" aria-expanded="true">Projetos ▾</a>
+          <div class="dropdown" role="menu" aria-hidden="true">
+            <a href="#educacao" role="menuitem">Educação</a>
+            <a href="#saude" role="menuitem">Saúde</a>
+            <a href="#doacoes" role="menuitem">Doações</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="cadastro.html">Cadastro</a></div>
+      </nav>
+
+      <button class="hamburger" id="btn-hamburger-2" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">☰</button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <button id="btn-close-2" aria-label="Fechar menu">✕</button>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="projeto.html">Projetos</a>
+        <a href="cadastro.html">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Projetos Sociais</h1>
+      <p class="small">Conheça iniciativas, impactos e como ajudar.</p>
+    </header>
+
+    <section id="educacao">
+      <h2>Educação</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Projeto Sementes do Amanhã</h3>
+          <p class="meta">Oficinas e reforço escolar</p>
+          <p>Capacitação de jovens para o mercado de trabalho.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="saude">
+      <h2>Saúde</h2>
+      <div class="card">
+        <h3>Projeto Saúde Comunitária</h3>
+        <p class="meta">Atendimentos e campanhas preventivas</p>
+        <p>Clínicas básicas e campanhas de vacinação.</p>
+      </div>
+    </section>
+
+    <section id="doacoes">
+      <h2>Doações</h2>
+      <div class="card">
+        <h3>Campanha Cestas Solidárias</h3>
+        <p class="meta">Doações mensais</p>
+        <p>Arrecadação e distribuição de cestas para famílias em vulnerabilidade.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container center small">
+      <p>© <span id="year2"></span> ONG Esperança.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

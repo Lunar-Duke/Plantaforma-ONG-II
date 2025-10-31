@@ -1,0 +1,76 @@
+/* BREAKPOINTS (mínimo 5) */
+@media (max-width: 480px){:root{--bp: 'xs'}}
+@media (min-width: 481px) and (max-width: 768px){:root{--bp: 'sm'}}
+@media (min-width: 769px) and (max-width: 992px){:root{--bp: 'md'}}
+@media (min-width: 993px) and (max-width: 1200px){:root{--bp: 'lg'}}
+@media (min-width: 1201px){:root{--bp: 'xl'}}
+
+/* GRID 12 colunas (container interno) */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-3);
+}
+
+/* utilitários de coluna, use classes no HTML: col-6, col-4 etc */
+[class*="col-"]{min-width:0}
+.col-1{grid-column: span 1}
+.col-2{grid-column: span 2}
+.col-3{grid-column: span 3}
+.col-4{grid-column: span 4}
+.col-6{grid-column: span 6}
+.col-8{grid-column: span 8}
+.col-12{grid-column: span 12}
+
+/* Cabeçalho */
+.header{
+  background: linear-gradient(90deg,var(--color-primary),var(--color-primary-700));
+  color:white;
+  padding: calc(var(--space-2) / 2) var(--space-2);
+  box-shadow: 0 6px 18px rgba(2,62,138,0.06);
+}
+.header .inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--space-2);
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+.logo{height:48px; width:auto}
+
+/* NAV DESKTOP */
+.nav{
+  display:flex;
+  gap: var(--space-2);
+  align-items:center;
+}
+.nav a{color:white; text-decoration:none; padding: .6rem .8rem; border-radius:6px; font-weight:600}
+.nav a:hover, .nav a:focus{background: rgba(255,255,255,0.08)}
+
+/* hamburger (mobile) */
+.hamburger{
+  display:none;
+  width:40px;height:40px;border-radius:8px;background:transparent;border:none;color:white;font-size:1.2rem;
+}
+@media(max-width:768px){
+  .nav{display:none}
+  .hamburger{display:inline-flex;align-items:center;justify-content:center}
+}
+
+/* mobile menu (drawer) */
+.mobile-menu{
+  position:fixed;
+  top:0;right:0;bottom:0;
+  width:280px;
+  transform: translateX(110%);
+  background:white;
+  box-shadow: -10px 0 30px rgba(16,24,40,0.12);
+  transition: transform .28s ease;
+  z-index:1000;
+  padding:var(--space-3);
+}
+.mobile-menu.open{transform: translateX(0)}
+
+/* footer */
+.site-footer{background:var(--color-primary-700); color:white; padding:var(--space-3) 0; margin-top:var(--space-4)}

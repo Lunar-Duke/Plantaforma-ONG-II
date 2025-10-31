@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ONG Esperança — Início</title>
+  <meta name="description" content="ONG Esperança — projetos, voluntariado e doações">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="inner container">
+      <a href="index.html" class="brand" aria-label="Página inicial ONG Esperança">
+        <img src="assets/IMAGEM/logo.png" alt="ONG Esperança" class="logo">
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Navegação principal">
+        <div class="nav-item"><a href="index.html">Início</a></div>
+        <div class="nav-item">
+          <a href="projeto.html" aria-haspopup="true" aria-expanded="false">Projetos ▾</a>
+          <div class="dropdown" role="menu" aria-hidden="true">
+            <a href="projeto.html#educacao" role="menuitem">Educação</a>
+            <a href="projeto.html#saude" role="menuitem">Saúde</a>
+            <a href="projeto.html#doacoes" role="menuitem">Doações</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="cadastro.html">Cadastro</a></div>
+      </nav>
+
+      <button class="hamburger" id="btn-hamburger" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">☰</button>
+    </div>
+
+    <!-- mobile drawer -->
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <button id="btn-close" aria-label="Fechar menu">✕</button>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="projeto.html">Projetos</a>
+        <a href="cadastro.html">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <section class="hero">
+      <h1>Transformando vidas através da solidariedade</h1>
+      <p class="small">Nossa missão é promover inclusão social por meio de educação, saúde e apoio comunitário.</p>
+    </section>
+
+    <section>
+      <h2>Projetos em destaque</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <img src="assets/img/proj-educacao.jpg" alt="Oficina de alfabetização" style="width:100%; border-radius:8px 8px 0 0; height:160px; object-fit:cover;">
+          <h3>Projeto Educação</h3>
+          <p class="meta">Impacto: 500 beneficiados</p>
+          <p>Oficinas de alfabetização e reforço escolar para crianças e adolescentes.</p>
+          <div style="margin-top:var(--space-2)">
+            <a class="btn" href="projeto.html">Ver projeto</a>
+            <span class="badge">Voluntariado</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/proj-saude.jpg" alt="Campanha de saúde" style="width:100%; border-radius:8px 8px 0 0; height:160px; object-fit:cover;">
+          <h3>Projeto Saúde</h3>
+          <p class="meta">Clínicas e campanhas de prevenção</p>
+          <p>Atendimento básico e campanhas de vacinação em comunidades.</p>
+          <div style="margin-top:var(--space-2)">
+            <a class="btn" href="projeto.html">Ver projeto</a>
+            <span class="badge">Doação</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/proj-doacao.jpg" alt="Distribuição de cestas básicas" style="width:100%; border-radius:8px 8px 0 0; height:160px; object-fit:cover;">
+          <h3>Projeto Mãos Amigas</h3>
+          <p class="meta">Apoio a famílias vulneráveis</p>
+          <p>Distribuição de cestas, kits de higiene e acompanhamento social.</p>
+          <div style="margin-top:var(--space-2)">
+            <a class="btn" href="projeto.html">Ver projeto</a>
+            <span class="badge">Impacto</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Seja voluntário</h2>
+      <p>Participe do nosso trabalho: ofereça seu tempo e habilidades para transformar vidas.</p>
+      <p><a class="btn" href="cadastro.html">Cadastre-se</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container center small">
+      <p>© <span id="year"></span> ONG Esperança — Transparência e impacto.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
